@@ -1,0 +1,23 @@
+{
+  "name": "strider-bdd-example",
+  "private": true,
+  "type": "module",
+  "description": "Gherkin scenarios run by effect-bdd on Strider, with a video of every run and a screenshot of every failure",
+  "scripts": {
+    "test": "effect-bdd --features \"features/**/*.feature\" --steps \"features/**/*.steps.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "@effect/platform-node": "^4.1.2",
+    "@usestrider/browser": "^0.3.0",
+    "effect": "^4.1.2",
+    "effect-bdd": "^0.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
